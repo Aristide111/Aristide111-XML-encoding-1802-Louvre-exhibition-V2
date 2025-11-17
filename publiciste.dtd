@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!ELEMENT element (metadata,body) >
+
+<!ELEMENT metadata (production,transcription,text)>
+
+
+<!ELEMENT production (author,publication,date) >
+
+<!ELEMENT author (name+,firstname+)>
+<!ELEMENT name (#PCDATA) >
+<!ELEMENT firstname (#PCDATA) >
+<!ELEMENT publication (publishername,publisherplace?,publisherdate) >
+<!ELEMENT publishername (#PCDATA) >
+<!ELEMENT publisherplace (#PCDATA) >
+<!ELEMENT publisherdate EMPTY>
+<!ATTLIST publisherdate when CDATA #REQUIRED>
+<!ATTLIST publisherdate calendar (julian | gregorian | chinese | other) #REQUIRED>
+<!ELEMENT date EMPTY>
+<!ATTLIST date when CDATA #REQUIRED>
+<!ATTLIST date calendar (julian | gregorian | chinese | other) #REQUIRED>
+
+
+
+<!ELEMENT transcription (author,date,place,accessibility?,operation,precision,project)>
+
+<!ELEMENT place (#PCDATA) >
+<!ELEMENT accessibility (#PCDATA) >
+<!ELEMENT operation (#PCDATA) >
+<!ELEMENT precision (#PCDATA) >
+<!ELEMENT project (#PCDATA) >
+
+<!ELEMENT text (conservation?, identity,materialsituation?,content) >
+
+<!ELEMENT conservation (country,city,institution)>
+
+<!ELEMENT institution (institutionname,departement,id,acquisition) >
+<!ELEMENT institutionname (#PCDATA) >
+<!ELEMENT acquisition (date,context) >
+<!ELEMENT country (#PCDATA) >
+<!ELEMENT city (#PCDATA) >
+<!ELEMENT departement (#PCDATA) >
+<!ELEMENT id (#PCDATA) >
+<!ELEMENT context (#PCDATA) >
+
+<!ELEMENT identity (title?,exlibris?,addition?) >
+<!ELEMENT title (#PCDATA) >
+<!ELEMENT exlibris (#PCDATA) >
+<!ELEMENT addition ( marginalia?, pagination?, stamp?) >
+<!ELEMENT marginalia (#PCDATA) >
+<!ELEMENT pagination (#PCDATA) >
+<!ELEMENT stamp (#PCDATA) >
+<!ELEMENT materialsituation (material?,binding?) >
+<!ELEMENT binding (material,period) >
+<!ELEMENT material (#PCDATA) >
+<!ELEMENT period (#PCDATA) >
+<!ELEMENT content (length?,style,goal) >
+<!ELEMENT length (#PCDATA) >
+<!ELEMENT style (#PCDATA) >
+<!ELEMENT goal (#PCDATA) >
+
+<!ELEMENT body (part+,marginalia?) >
+<!ELEMENT part (sentence+) >
+<!ELEMENT sentence (#PCDATA | name | place | piece)* >
+<!ELEMENT piece (#PCDATA) >

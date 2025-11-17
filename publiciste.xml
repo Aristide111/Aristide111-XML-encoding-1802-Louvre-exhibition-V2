@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE element SYSTEM "publiciste.dtd">
+
+<element>
+    <metadata>
+        
+        <production>
+            <author>
+                <name>Curtelin</name>
+                <firstname>Aristide</firstname>
+            </author>
+            <publication>
+                <publishername>Curtelin</publishername>
+                <publisherplace>Paris</publisherplace>
+                <publisherdate when="2025" calendar="gregorian"/>
+            </publication>
+            <date when="2025" calendar="gregorian"/>
+        </production>
+        
+        <transcription>
+            <author>
+                <name>Curtelin</name>
+                <firstname>Aristide</firstname>
+            </author>
+            <date when="2025" calendar="gregorian"/>
+            <place>Paris</place>
+            <accessibility>free</accessibility>
+            <operation>transcription</operation>
+            <precision>accurate</precision>
+            <project>scholar exam</project>
+        </transcription>
+        
+        <text>
+            <conservation>
+                <country>France</country>
+                <city>Paris</city>
+                <institution>
+                    <institutionname>Bibliothèque Nationale de France</institutionname>
+                    <departement>manuscript</departement>
+                    <id>ark:/12148/btv1b10527793s</id>
+                    <acquisition>
+                        <date when="1802" calendar="gregorian"/>
+                        <context>Depôt Légal</context>
+                    </acquisition>
+                </institution>
+            </conservation>
+            <identity>
+                <title>
+                    Exposition du 9. mars 1802. journal du publiciste</title>
+                <addition>
+                    <marginalia>yes</marginalia>
+                    <pagination>yes</pagination>
+                    <stamp>yes</stamp>
+                </addition>
+            </identity>
+            <materialsituation>
+                <material>paper</material>
+            </materialsituation>
+            <content>
+                <length>4 pages</length>
+                <style>press article</style>
+                <goal>art description</goal>
+            </content>
+        </text>
+    </metadata>
+    
+    <body>
+        <part>
+            <sentence> Exposition du 9 mars 1802 journal du publiciste. </sentence> 
+        </part> 
+        <part>
+            <sentence>n voit au <place>musée central des arts</place> une nouvelle exposition de tableaux, parmi les quels on distingue plusieurs excellentes productions d'<name>andrea del Sarto de Carrache</name> de <name>Vaniyek</name> de <name>Rubens</name> de <name>Paul Veronese</name> du <name>titien </name>et de r<name>aphael.</name></sentence>
+            <sentence>le <piece>martyre de st pierre , dominicain</piece>, regardé comme le chef d'oeuvre du <name>titieu </name>et le precieux tableau de <name>raphael,</name> <piece>la vierge au Donaiataire</piece>, qui se trouvait a <place>foliguo,</place> s'étant trouvé en très mauvais etat, le premier par les effets du voyage, le second par ceux du tems ont été enlevés du bois sur lequel ils etaient transportés sur une autre toile et restaurés par les soins de l'aministration. </sentence>
+        </part>
+    </body>
+</element>
+
+  
